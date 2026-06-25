@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Configuration</title>
+<link rel="stylesheet" href="Student1.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <div class="left-header">
+            <i class="fas fa-arrow-left"></i>
+            <h2>EduTest Pro</h2>
+        </div>
+
+        <div class="right-header">
+            <i class="far fa-bell"></i>
+            <img src="https://i.pravatar.cc/40" alt="">
+        </div>
+    </header>
+
+    <div class="content">
+
+        <span class="subtitle">NEW ASSESSMENT</span>
+        <h1>Exam Configuration</h1>
+
+        <div class="progress">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Exam Title -->
+        <div class="form-group">
+            <label>Exam Title</label>
+            <div class="input-box">
+                <i class="far fa-file-alt"></i>
+                <input type="text"
+                    placeholder="e.g. Mid-term Biology Assessment">
+            </div>
+            <small>Students will see this name on their dashboard.</small>
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group">
+            <label>Subject</label>
+
+            <select>
+                <option>Mathematics</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>English</option>
+            </select>
+        </div>
+
+        <!-- Duration -->
+        <div class="form-group">
+            <label>Duration (minutes)</label>
+
+            <div class="input-box">
+                <i class="far fa-clock"></i>
+                <input type="number" placeholder="60">
+            </div>
+        </div>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label>Scheduled Date</label>
+
+            <div class="input-box">
+                <i class="far fa-calendar"></i>
+                <input type="date">
+            </div>
+        </div>
+
+        <!-- Preferences -->
+        <div class="preference-card">
+
+            <h3>
+                <i class="fas fa-cog"></i>
+                EXAM PREFERENCES
+            </h3>
+
+            <div class="pref-row">
+                <div>
+                    <h4>Shuffle Questions</h4>
+                    <p>Prevent cheating by randomizing question order.</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <hr>
+
+            <div class="pref-row">
+                <div>
+                    <h4>Automatic Results</h4>
+                    <p>Release grades immediately after submission.</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="draft">
+                Save Draft
+            </button>
+
+            <button class="next">
+                Next: Add Questions
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
