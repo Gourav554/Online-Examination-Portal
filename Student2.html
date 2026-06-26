@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination Portal</title>
+
+    <link rel="stylesheet" href="Student2.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="profile">
+            <div class="profile-img">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3>Rahul Verma</h3>
+            <p>Roll No. 23CS1018</p>
+        </div>
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-clipboard-list"></i>
+                Examinations
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-column"></i>
+                My Results
+            </li>
+
+            <li>
+                <i class="fa-solid fa-book"></i>
+                Study Materials
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+
+            <li>
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+        <button class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Navbar -->
+        <div class="navbar">
+
+            <h2>
+                Java Programming - Unit Test
+            </h2>
+
+            <div class="nav-right">
+
+                <div class="timer">
+                    <small>Time Left</small>
+                    <h3 id="time">00:59:42</h3>
+                </div>
+
+                <button class="submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Submit Exam
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Questions -->
+        <div class="questions">
+
+            <!-- Question -->
+            <div class="question-card">
+
+                <div class="question-header">
+                    <span>1</span>
+
+                    <h4>
+                        Which of the following is not a Java feature?
+                    </h4>
+
+                    <small>1 Mark</small>
+                </div>
+
+                <div class="options">
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Platform Independent
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Use of Pointers
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Object Oriented
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1">
+                        Robust
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Question -->
+            <div class="question-card">
+
+                <div class="question-header">
+                    <span>2</span>
+
+                    <h4>
+                        Which keyword is used to inherit a class in Java?
+                    </h4>
+
+                    <small>1 Mark</small>
+                </div>
+
+                <div class="options">
+
+                    <label>
+                        <input type="radio" name="q2">
+                        implements
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2">
+                        extends
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2">
+                        inherits
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2">
+                        super
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+        </div>
+
+    </main>
+
+    <!-- Right Panel -->
+    <aside class="right-panel">
+
+        <h3>Question Palette</h3>
+
+        <div class="status">
+
+            <p>
+                <span class="green"></span>
+                Answered
+            </p>
+
+            <p>
+                <span class="red"></span>
+                Not Answered
+            </p>
+
+            <p>
+                <span class="gray"></span>
+                Not Visited
+            </p>
+
+        </div>
+
+        <div class="palette">
+
+            <button class="answered">1</button>
+            <button class="not-answer">2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+
+        </div>
+
+        <div class="review-box">
+
+            <h3>Review & Submit</h3>
+
+            <p>
+                You have not marked any question
+                for review.
+            </p>
+
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="Student2.js"></script>
+
+</body>
+</html>

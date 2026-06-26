@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 90px;
+    background: #1f2336;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    font-size: 35px;
+    padding: 25px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover,
+.active {
+    background: #2f3754;
+}
+
+.sidebar span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Main */
+
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button {
+    padding: 10px 20px;
+    border: none;
+    background: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Welcome */
+
+.welcome-box {
+    background: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    border-radius: 12px;
+}
+
+.welcome-img {
+    width: 90px;
+    height: 90px;
+    background: #e7fff9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #30b9a8;
+    border-radius: 15px;
+}
+
+.sample {
+    margin-top: 15px;
+}
+
+.sample a {
+    color: #2196f3;
+}
+
+/* Exams */
+
+.exam-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.exam-card {
+    background: white;
+    width: 350px;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.exam-card h4 {
+    margin-bottom: 20px;
+}
+
+.exam-card p {
+    margin-bottom: 15px;
+    color: gray;
+}
+
+.exam-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #82e5dc;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Right Panel */
+
+.right-panel {
+    width: 300px;
+    background: #fafafa;
+    padding: 20px;
+}
+
+.profile {
+    background: #4a4f72;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.calendar {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.calendar table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.calendar td,
+.calendar th {
+    padding: 10px;
+}
+
+.today {
+    background: #30b9a8;
+    color: white;
+    border-radius: 50%;
+}

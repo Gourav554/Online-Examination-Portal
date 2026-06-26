@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:260px;
+    background:#042f6d;
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+.profile{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.profile-img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:white;
+    color:#042f6d;
+    font-size:40px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile h3{
+    margin-top:15px;
+}
+
+.profile p{
+    color:#ddd;
+    font-size:14px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:18px 30px;
+    cursor:pointer;
+}
+
+.sidebar li:hover,
+.active{
+    background:#1565ff;
+}
+
+.logout-btn{
+    margin:auto 20px 20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+}
+
+/* Main */
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-right{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.timer{
+    background:white;
+    padding:10px 20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.timer h3{
+    color:#1565ff;
+}
+
+.submit-btn{
+    background:#1565ff;
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* Questions */
+
+.question-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-top:25px;
+}
+
+.question-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.question-header span{
+    background:#eaf1ff;
+    color:#1565ff;
+    padding:8px 15px;
+    border-radius:6px;
+}
+
+.options{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.options label{
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.prev-btn,
+.next-btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:#1565ff;
+    color:white;
+    cursor:pointer;
+}
+
+/* Right Panel */
+
+.right-panel{
+    width:280px;
+    background:#fafafa;
+    padding:30px;
+}
+
+.status{
+    margin-top:20px;
+}
+
+.status p{
+    margin-bottom:15px;
+}
+
+.status span{
+    width:15px;
+    height:15px;
+    display:inline-block;
+    border-radius:4px;
+    margin-right:10px;
+}
+
+.green{
+    background:green;
+}
+
+.red{
+    background:red;
+}
+
+.gray{
+    background:gray;
+}
+
+.palette{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+    margin-top:30px;
+}
+
+.palette button{
+    height:45px;
+    border:none;
+    border-radius:8px;
+    background:#eee;
+}
+
+.answered{
+    background:green !important;
+    color:white;
+}
+
+.not-answer{
+    background:red !important;
+    color:white;
+}
+
+.review-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-top:40px;
+    text-align:center;
+}

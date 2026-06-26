@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination Portal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="Teacher.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Online Examination Portal</span>
+        </div>
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-book"></i>
+                Subject Management
+            </li>
+
+            <li>
+                <i class="fa-solid fa-layer-group"></i>
+                Question Bank
+            </li>
+
+            <li>
+                <i class="fa-solid fa-file-circle-plus"></i>
+                Create Exam
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-calendar-check"></i>
+                Exams
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-line"></i>
+                Results & Analytics
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+            <li>
+                <i class="fa-solid fa-circle-question"></i>
+                Help & Support
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Section -->
+    <main class="main">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text"
+                       placeholder="Search exams...">
+            </div>
+
+            <button class="create-btn">
+                <i class="fa-solid fa-plus"></i>
+                Create Exam
+            </button>
+
+        </nav>
+
+        <!-- Heading -->
+        <div class="heading">
+            <h1>Exams</h1>
+            <p>Create, manage and monitor your exams.</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- Filter -->
+            <div class="filter-card">
+
+                <h3>Filter</h3>
+
+                <label>Status</label>
+                <select>
+                    <option>All Status</option>
+                </select>
+
+                <label>Exam Type</label>
+                <select>
+                    <option>All Types</option>
+                </select>
+
+                <label>Semester</label>
+                <select>
+                    <option>All Semesters</option>
+                </select>
+
+                <button class="apply-btn">
+                    Apply
+                </button>
+
+                <button class="clear-btn">
+                    Clear Filters
+                </button>
+
+            </div>
+
+            <!-- Subject Cards -->
+            <div class="cards">
+
+                <div class="card biology">
+                    <div class="top">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+
+                    <div class="body">
+                        <h3>Biology</h3>
+
+                        <p>Total Exams : 8</p>
+                        <p>Active Exams : 5</p>
+                        <p>Drafts : 3</p>
+                        <p>Completed : 2</p>
+
+                        <button>
+                            View Exams
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card chemistry">
+                    <div class="top">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <div class="body">
+                        <h3>Chemistry</h3>
+
+                        <p>Total Exams : 10</p>
+                        <p>Active Exams : 6</p>
+                        <p>Drafts : 2</p>
+                        <p>Completed : 4</p>
+
+                        <button>
+                            View Exams
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card physics">
+                    <div class="top">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+
+                    <div class="body">
+                        <h3>Physics</h3>
+
+                        <p>Total Exams : 7</p>
+                        <p>Active Exams : 4</p>
+                        <p>Drafts : 2</p>
+                        <p>Completed : 1</p>
+
+                        <button>
+                            View Exams
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card cs">
+                    <div class="top">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div class="body">
+                        <h3>Computer Science</h3>
+
+                        <p>Total Exams : 9</p>
+                        <p>Active Exams : 5</p>
+                        <p>Drafts : 3</p>
+                        <p>Completed : 2</p>
+
+                        <button>
+                            View Exams
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
