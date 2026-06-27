@@ -104,38 +104,6 @@
             <p>Create, manage and monitor your exams.</p>
         </div>
 
-        <!-- Content -->
-        <div class="content">
-
-            <!-- Filter -->
-            <div class="filter-card">
-
-                <h3>Filter</h3>
-
-                <label>Status</label>
-                <select>
-                    <option>All Status</option>
-                </select>
-
-                <label>Exam Type</label>
-                <select>
-                    <option>All Types</option>
-                </select>
-
-                <label>Semester</label>
-                <select>
-                    <option>All Semesters</option>
-                </select>
-
-                <button class="apply-btn">
-                    Apply
-                </button>
-
-                <button class="clear-btn">
-                    Clear Filters
-                </button>
-
-            </div>
 
             <!-- Subject Cards -->
             <div class="cards">
@@ -222,11 +190,65 @@
 
             </div>
 
+            <div class="exam-list">
+                <h2>Created Exams</h2>
+                <div class="created-exams">
+                    <p class="empty-message">No exam has been created yet. Click Create Exam to add one.</p>
+                </div>
+            </div>
+
         </div>
 
     </main>
 
 </div>
+
+<div class="modal-overlay hidden">
+    <div class="modal">
+        <div class="modal-header">
+            <h3>Create New Exam</h3>
+            <button type="button" class="close-modal" aria-label="Close">×</button>
+        </div>
+        <form class="exam-form">
+            <div class="form-row">
+                <label for="exam-title">Exam Title</label>
+                <input id="exam-title" name="title" type="text" required placeholder="Enter exam title">
+            </div>
+            <div class="form-row">
+                <label for="exam-subject">Subject</label>
+                <select id="exam-subject" name="subject" required>
+                    <option value="">Select subject</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Computer Science">Computer Science</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="exam-questions">Total Questions</label>
+                <input id="exam-questions" name="questions" type="number" min="1" required placeholder="10">
+            </div>
+            <div class="form-row">
+                <label for="exam-duration">Duration (minutes)</label>
+                <input id="exam-duration" name="duration" type="number" min="10" required placeholder="60">
+            </div>
+            <div class="form-row">
+                <label for="exam-status">Status</label>
+                <select id="exam-status" name="status" required>
+                    <option value="Draft">Draft</option>
+                    <option value="Active">Active</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <button type="submit" class="save-btn">Add Exam</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="Teacher.js"></script>
 
 </body>
 </html>
