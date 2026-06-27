@@ -14,11 +14,11 @@ body{
     min-height:100vh;
 }
 
-/* Sidebar */
+
 
 .sidebar{
     width:260px;
-    background:#042f6d;
+    background:#1f2336;
     color:white;
     display:flex;
     flex-direction:column;
@@ -34,7 +34,7 @@ body{
     height:90px;
     border-radius:50%;
     background:white;
-    color:#042f6d;
+    color:#82e5dc;
     font-size:40px;
     margin:auto;
     display:flex;
@@ -47,7 +47,7 @@ body{
 }
 
 .profile p{
-    color:#ddd;
+    color:#c3b1b1;
     font-size:14px;
 }
 
@@ -60,9 +60,17 @@ body{
     cursor:pointer;
 }
 
+.sidebar li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    text-decoration:none;
+}
+
 .sidebar li:hover,
 .active{
-    background:#1565ff;
+    background:#82e5dc;
 }
 
 .logout-btn{
@@ -101,12 +109,12 @@ body{
 }
 
 .timer h3{
-    color:#1565ff;
+    color:#82e5dc;
 }
 
 .submit-btn{
-    background:#1565ff;
-    color:white;
+    background:#82e5dc;
+    color:rgb(16, 11, 11);
     border:none;
     padding:14px 25px;
     border-radius:10px;
@@ -130,7 +138,7 @@ body{
 
 .question-header span{
     background:#eaf1ff;
-    color:#1565ff;
+    color:#82e5dc;
     padding:8px 15px;
     border-radius:6px;
 }
@@ -143,7 +151,7 @@ body{
 }
 
 .options label{
-    border:1px solid #ddd;
+    border:1px solid #cbb2b2;
     padding:15px;
     border-radius:10px;
     cursor:pointer;
@@ -160,8 +168,8 @@ body{
     padding:12px 25px;
     border:none;
     border-radius:8px;
-    background:#1565ff;
-    color:white;
+    background:#82e5dc;
+    color:rgb(28, 22, 22);
     cursor:pointer;
 }
 

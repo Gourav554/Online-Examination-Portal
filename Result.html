@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Details</title>
+
+    <link rel="stylesheet" href="Result.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Online Exam Portal</h3>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="Student Dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            
+
+            <li class="active">
+                <i class="fa-solid fa-file-lines"></i>
+                Results
+            </li>
+
+
+           
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+        <button class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <h3>
+                <i class="fa-solid fa-bars"></i>
+                Result Details
+            </h3>
+
+            <div class="nav-right">
+
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>3</span>
+                </div>
+
+                <button class="help-btn">
+                    <i class="fa-solid fa-circle-question"></i>
+                    Help
+                </button>
+
+            </div>
+
+        </nav>
+
+        <!-- Exam Card -->
+        <div class="exam-card">
+
+            <div class="exam-left">
+
+                <div class="exam-icon">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+
+                <div>
+                    <h2>Java Programming - Unit Test</h2>
+
+                    <p>
+                        Exam Date: 19 Sep 2026 |
+                        Duration: 60 Minutes |
+                        Total Marks: 100
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="status">
+                Passed
+            </div>
+
+        </div>
+
+        <!-- Performance Overview -->
+        <div class="performance">
+
+            <h3>Performance Overview</h3>
+
+            <div class="cards">
+
+                <div class="card green">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h1>16</h1>
+                    <p>Correct Answers</p>
+                </div>
+
+                <div class="card red">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <h1>4</h1>
+                    <p>Wrong Answers</p>
+                </div>
+
+                <div class="card orange">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h1>0</h1>
+                    <p>Unattempted</p>
+                </div>
+
+                <div class="card blue">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h1>80%</h1>
+                    <p>Percentage</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Score Summary -->
+        <div class="summary">
+
+            <h3>Score Summary</h3>
+
+            <table>
+
+                <tr>
+                    <td>Total Marks</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Marks Obtained</td>
+                    <td>80</td>
+                </tr>
+
+                <tr>
+                    <td>Passing Marks</td>
+                    <td>40</td>
+                </tr>
+
+                <tr>
+                    <td>Percentage</td>
+                    <td>80%</td>
+                </tr>
+
+                <tr>
+                    <td>Result</td>
+                    <td class="pass">Passed</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Section Summary -->
+        <div class="section-summary">
+
+            <h3>Section Summary</h3>
+
+            <table>
+
+                <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Total Questions</th>
+                    <th>Correct</th>
+                    <th>Wrong</th>
+                    <th>Unattempted</th>
+                    <th>Marks Obtained</th>
+                    <th>Total Marks</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                <tr>
+                    <td>Section A</td>
+                    <td>10</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>40</td>
+                    <td>50</td>
+                </tr>
+
+                <tr>
+                    <td>Section B</td>
+                    <td>10</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>40</td>
+                    <td>50</td>
+                </tr>
+
+                <tr>
+                    <th>Total</th>
+                    <th>20</th>
+                    <th>16</th>
+                    <th>4</th>
+                    <th>0</th>
+                    <th>80</th>
+                    <th>100</th>
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <!-- Right Panel -->
+    <aside class="right-panel">
+
+        <!-- Profile -->
+        <div class="profile-card">
+
+            <div class="profile-img">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h2>Allen</h2>
+            <p>Student</p>
+            <p>Roll No: 23CS1018</p>
+
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+
+            <h3>Quick Stats</h3>
+
+            <div class="stat">
+                <span>Total Exams</span>
+                <b>12</b>
+            </div>
+
+            <div class="stat">
+                <span>Completed</span>
+                <b>8</b>
+            </div>
+
+            <div class="stat">
+                <span>Upcoming</span>
+                <b>4</b>
+            </div>
+
+            <div class="stat">
+                <span>Average Score</span>
+                <b>82%</b>
+            </div>
+
+        </div>
+
+        <!-- Recent Exams -->
+        <div class="recent">
+
+            <h3>Recent Exams</h3>
+
+            <div class="exam">
+                <p>DBMS - Mock Test</p>
+                <span>70%</span>
+            </div>
+
+            <div class="exam">
+                <p>Math 101 - Quiz 1</p>
+                <span>80%</span>
+            </div>
+
+            <div class="exam">
+                <p>Web Tech Assignment</p>
+                <span>70%</span>
+            </div>
+
+            <a href="#">
+                View All Results
+            </a>
+
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="Result.js"></script>
+
+</body>
+</html>
