@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Exam</title>
+
+    <link rel="stylesheet" href="CreateExam.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Online Exam Portal</h3>
+        </div>
+
+        <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-file-circle-plus"></i>
+                Create Exam
+            </li>
+
+            <li>
+                <i class="fa-solid fa-circle-question"></i>
+                Question Bank
+            </li>
+
+            <li>
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                Results
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Navbar -->
+        <div class="navbar">
+
+            <h2>Create New Exam</h2>
+
+            <button>
+                <i class="fa-solid fa-circle-question"></i>
+                Help
+            </button>
+
+        </div>
+
+        <!-- Exam Details -->
+        <div class="form-box">
+
+            <div class="input-box">
+                <label>Exam Name</label>
+                <input type="text"
+                       placeholder="Enter Exam Name">
+            </div>
+
+            <div class="input-box">
+                <label>Subject</label>
+
+                <select>
+                    <option>Select Subject</option>
+                    <option>Java</option>
+                    <option>DBMS</option>
+                    <option>DSA</option>
+                    <option>Math</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Exam Date</label>
+                <input type="date">
+            </div>
+
+            <div class="input-box">
+                <label>Start Time</label>
+                <input type="time">
+            </div>
+
+            <div class="input-box">
+                <label>Duration (Minutes)</label>
+                <input type="number"
+                       placeholder="60">
+            </div>
+
+            <div class="input-box">
+                <label>Total Questions</label>
+                <input type="number"
+                       placeholder="20">
+            </div>
+
+            <div class="input-box">
+                <label>Total Marks</label>
+                <input type="number"
+                       placeholder="100">
+            </div>
+
+            <div class="input-box">
+                <label>Passing Marks</label>
+                <input type="number"
+                       placeholder="40">
+            </div>
+
+            <div class="input-box full-width">
+                <label>Instructions</label>
+
+                <textarea
+                    placeholder="Enter exam instructions...">
+                </textarea>
+            </div>
+
+        </div>
+
+        <!-- Add Questions -->
+        <div class="question-box">
+
+            <h2>
+                <i class="fa-solid fa-circle-question"></i>
+                Add Questions
+            </h2>
+
+            <div class="question-form">
+
+                <div class="input-box">
+                    <label>Question No.</label>
+                    <input type="number"
+                           value="1">
+                </div>
+
+                <div class="input-box full-width">
+                    <label>Question</label>
+
+                    <textarea
+                        placeholder="Enter your question here...">
+                    </textarea>
+                </div>
+
+                <div class="input-box">
+                    <label>Option A</label>
+                    <input type="text"
+                           placeholder="Enter Option A">
+                </div>
+
+                <div class="input-box">
+                    <label>Option B</label>
+                    <input type="text"
+                           placeholder="Enter Option B">
+                </div>
+
+                <div class="input-box">
+                    <label>Option C</label>
+                    <input type="text"
+                           placeholder="Enter Option C">
+                </div>
+
+                <div class="input-box">
+                    <label>Option D</label>
+                    <input type="text"
+                           placeholder="Enter Option D">
+                </div>
+
+                <div class="input-box">
+                    <label>Correct Answer</label>
+
+                    <select>
+                        <option>Select Answer</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="btn-box">
+
+                <button class="save-btn">
+                    Save Question
+                </button>
+
+                <button class="publish-btn">
+                    Add Next Question
+                </button>
+
+                <button class="create-btn">
+                    Publish Exam
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
