@@ -14,21 +14,42 @@
     <div class="sidebar">
         <div class="logo">
             <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Online Exam Portal</h3>
         </div>
 
         <ul>
             <li class="active">
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
+                <a href="Student Dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
             </li>
 
             <li>
-                <i class="fa-solid fa-file"></i>
-                <span>Result</span>
+                <a href="Student2.html">
+                    <i class="fa-solid fa-file"></i>
+                    <span>Take Exam</span>
+                </a>
             </li>
 
-            
+            <li>
+                <a href="Result.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Results</span>
+                </a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </li>
         </ul>
+
+        <button class="logout-btn"
+        onclick="window.location.href='index.html'">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Logout
+</button>
     </div>
 
     <!-- Main Content -->
@@ -41,7 +62,11 @@
                 Home
             </h4>
 
-            <button>Help</button>
+             <button class="help-btn">
+                    <i class="fa-solid fa-circle-question"></i>
+                    Help
+                </button>
+
         </div>
 
         <!-- Welcome Box -->
@@ -110,14 +135,14 @@
                     100 Marks
                 </p>
 
-                <button>Enter Exam</button>
+                <button type="button" onclick="window.location.href='DSA.html'">Enter Exam</button>
 
             </div>
 
              <!-- Card 3 -->
              <div class="exam-card">
 
-                <h4>MT2022 - DBMS Exam</h4>
+                <h4>ADVCSTJV001T - DBMS Exam</h4>
 
                 <p>
                     <i class="fa-solid fa-calendar-days"></i>
@@ -126,7 +151,7 @@
 
                 <p>
                     <i class="fa-solid fa-file-lines"></i>
-                    15 Questions
+                    10 Questions
                 </p>
 
                 <p>
@@ -134,7 +159,7 @@
                     150 Marks
                 </p>
 
-                <button>Enter Exam</button>
+                <button type="button" onclick="window.location.href='DBMS.html'">Enter Exam</button>
 
             </div>
 
@@ -145,18 +170,6 @@
 
     <!-- Right Side -->
     <div class="right-panel">
-
-        <!-- Profile -->
-        <div class="profile">
-
-            <div class="profile-img"></div>
-
-            <h3>Allen</h3>
-
-            <p>Student</p>
-
-        </div>
-
         <!-- Calendar -->
         <div class="calendar">
 

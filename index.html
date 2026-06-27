@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Examination Portal</title>
+
     <link rel="stylesheet" href="index.css">
+
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -16,22 +18,29 @@
 
         <div class="logo">
             <h2>Online Examination Portal</h2>
- 
-            <div class="role-selection">
-       
-        <label>
-            <input type="radio" name="role" value="student" checked>
-            Student
-        </label>
 
-        <label>
-            <input type="radio" name="role" value="teacher">
-            Teacher
-        </label>
-    </div>
+            <div class="role-selection">
+
+                <label>
+                    <input type="radio"
+                           name="role"
+                           value="student"
+                           checked>
+                    Student
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="role"
+                           value="teacher">
+                    Teacher
+                </label>
+
+            </div>
         </div>
 
         <div class="login-box">
+
             <h4>Login to your account</h4>
 
             <div class="social">
@@ -44,21 +53,32 @@
                 </div>
             </div>
 
-            <input type="email" placeholder="Your Email">
+            <input type="text"
+                   id="userId"
+                   placeholder="Enter ID">
 
             <div class="password-box">
-                <input type="password" placeholder="Password">
-                <i class="fa fa-eye"></i>
+                <input type="password"
+                       id="password"
+                       placeholder="Password">
+
+                <i class="fa fa-eye"
+                   onclick="showPassword()"></i>
             </div>
 
-            <a href="#" class="forgot">Forgot password?</a>
+            <a href="#" class="forgot">
+                Forgot Password?
+            </a>
 
-            <button>Log In</button>
+            <button onclick="login()">
+                Log In
+            </button>
+
+            <p id="message"></p>
 
         </div>
 
         <div class="footer">
-            
             <span>Terms & Conditions</span>
             <span>Privacy Policy</span>
             <span>Help</span>
@@ -68,15 +88,14 @@
 
     <div class="right">
 
-
         <img src="Login.jpg"
-             alt="illustration">
-
-       
+             alt="Login Image">
 
     </div>
 
 </div>
+
+<script src="index.js"></script>
 
 </body>
 </html>

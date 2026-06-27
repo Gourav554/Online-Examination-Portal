@@ -17,76 +17,82 @@ body {
 /* ================= SIDEBAR ================= */
 
 .sidebar {
-  width: 250px;
-  background: linear-gradient(180deg, #23488d, #8391b1);
+  width: 260px;
+  background: #1f2336;
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 20px 0 25px;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  padding: 25px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 10px 20px 20px;
 }
 
 .logo i {
-  font-size: 28px;
-  color: #4ea5ff;
+  font-size: 30px;
+  color: #82e5dc;
 }
 
 .logo h3 {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .sidebar ul {
   list-style: none;
-  padding: 20px 0;
+  padding: 10px 0 20px;
 }
 
 .sidebar li {
-  padding: 16px 25px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  padding: 14px 24px;
   cursor: pointer;
   transition: 0.3s;
-  position: relative;
 }
 
-.sidebar li:hover {
-  background: rgba(255,255,255,0.1);
-}
-
-.sidebar .active {
-  background: #1565ff;
-  border-radius: 10px;
-  margin: 0 12px;
-}
-
-.badge {
-  margin-left: auto;
-  background: red;
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: white;
-  font-size: 12px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+  text-decoration: none;
+}
+
+.sidebar li:hover,
+.sidebar .active {
+  background: #82e5dc;
+}
+
+.sidebar li:hover a,
+.sidebar .active a {
+  color: #1f2336;
+}
+
+.sidebar li i {
+  width: 18px;
+  text-align: center;
+}
+
+.sidebar span {
+  font-size: 14px;
 }
 
 .logout-btn {
-  margin: auto 20px 25px;
-  padding: 14px;
+  margin: auto 20px 0;
+  padding: 12px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   background: white;
-  color: #0b2b68;
-  font-weight: 600;
+  color: #1f2336;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 /* ================= MAIN ================= */

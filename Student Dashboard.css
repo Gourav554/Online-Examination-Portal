@@ -20,35 +20,82 @@ body {
 /* Sidebar */
 
 .sidebar {
-    width: 90px;
+    width: 260px;
     background: #1f2336;
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 25px;
 }
 
 .logo {
-    font-size: 35px;
-    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px 20px;
+}
+
+.logo i {
+    font-size: 30px;
+    color: #82e5dc;
+}
+
+.logo h3 {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .sidebar ul {
     list-style: none;
+    padding: 10px 0 20px;
 }
 
 .sidebar li {
-    padding: 25px 0;
+    padding: 14px 24px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 .sidebar li:hover,
-.active {
-    background: #2f3754;
+.sidebar .active {
+    background: #82e5dc;
+}
+
+.sidebar li:hover a,
+.sidebar .active a {
+    color: #1f2336;
+}
+
+.sidebar li i {
+    width: 18px;
+    text-align: center;
 }
 
 .sidebar span {
-    display: block;
-    margin-top: 10px;
-    font-size: 13px;
+    font-size: 14px;
+}
+
+.logout-btn {
+    margin: auto 20px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #1f2336;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 /* Main */
@@ -142,46 +189,33 @@ body {
 }
 
 /* Right Panel */
-
 .right-panel {
-    width: 300px;
-    background: #fafafa;
+    width: 280px;
+    flex-shrink: 0;
     padding: 20px;
-}
-
-.profile {
-    background: #4a4f72;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-.profile-img {
-    width: 80px;
-    height: 80px;
-    background: white;
-    border-radius: 50%;
-    margin: auto;
-    margin-bottom: 15px;
+    background: #fafafa;
 }
 
 .calendar {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .calendar table {
     width: 100%;
-    text-align: center;
-    margin-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
-.calendar td,
-.calendar th {
-    padding: 10px;
+.calendar th,
+.calendar td {
+    width: 14.28%;
+    height: 45px;
+    text-align: center;
+    padding: 0;
 }
 
 .today {
