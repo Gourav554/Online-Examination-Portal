@@ -8,7 +8,8 @@ const questions = [
             "Use of Pointers",
             "Object Oriented",
             "Robust"
-        ]
+        ],
+        correctAnswer: "Use of Pointers"
     },
     {
         id: 2,
@@ -19,7 +20,8 @@ const questions = [
             "extends",
             "inherits",
             "super"
-        ]
+        ],
+        correctAnswer: "implements"
     },
     {
         id: 3,
@@ -30,7 +32,8 @@ const questions = [
             "16 bits",
             "32 bits",
             "64 bits"
-        ]
+        ],
+        correctAnswer: "8 bits"
     },
     {
         id: 4,
@@ -41,7 +44,8 @@ const questions = [
             "-",
             "*",
             "/"
-        ]
+        ],
+        correctAnswer: "+"
     },
     {
         id: 5,
@@ -52,7 +56,8 @@ const questions = [
             "main()",
             "run()",
             "init()"
-        ]
+        ],
+        correctAnswer: "start()"
     },
     {
         id: 6,
@@ -63,7 +68,8 @@ const questions = [
             "final",
             "const",
             "immutable"
-        ]
+        ],
+        correctAnswer: "static"
     },
     {
         id: 7,
@@ -74,7 +80,8 @@ const questions = [
             "protected",
             "public",
             "All of the above"
-        ]
+        ],
+        correctAnswer: "private"
     },
     {
         id: 8,
@@ -85,7 +92,8 @@ const questions = [
             "HashMap",
             "LinkedList",
             "Stack"
-        ]
+        ],
+        correctAnswer: "ArrayList"
     },
     {
         id: 9,
@@ -96,7 +104,8 @@ const questions = [
             "Java Virtual Machine",
             "Java Version Manager",
             "Java Visual Model"
-        ]
+        ],
+        correctAnswer: "Java Visual Model"
     },
     {
         id: 10,
@@ -107,7 +116,8 @@ const questions = [
             "new",
             "build",
             "make"
-        ]
+        ],
+        correctAnswer: "create"
     }
 ];
 
@@ -230,3 +240,42 @@ function initializeExamPage() {
 }
 
 window.addEventListener("DOMContentLoaded", initializeExamPage);
+
+
+function submitExam() {
+
+    let score = 0;
+    let correct = 0;
+    let wrong = 0;
+
+    questions.forEach((question) => {
+
+        const selected =
+            selectedAnswers[question.id];
+
+        // Skip if not attempted
+        if (!selected) {
+            return;
+        }
+
+        // Correct Answer
+        if (
+            selected === question.correctAnswer
+        ) {
+            score += 1;
+            correct++;
+        }
+
+        // Wrong Answer
+        else {
+            score -= 1;
+            wrong++;
+        }
+    });
+
+    alert(
+        "Correct Answers : " + correct +
+        "\nWrong Answers : " + wrong +
+        "\nScore : " + score
+    );
+}

@@ -45,6 +45,9 @@ body{
 
 .sidebar ul{
     list-style:none;
+    padding:0;
+    margin:0;
+    flex:1;
 }
 
 .sidebar li{
@@ -72,7 +75,8 @@ body{
 }
 
 .logout-btn {
-    margin: auto 20px 0;
+    margin-top:auto;
+    margin:0 20px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
