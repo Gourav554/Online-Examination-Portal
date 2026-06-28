@@ -18,11 +18,12 @@ body {
 
 .sidebar {
     width: 260px;
-    background: #1f2336;
+    background: #101b2d;
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 20px 0 25px;
+    padding: 25px 0;
+    min-height: 100vh;
 }
 
 .logo {
@@ -30,7 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 10px 20px 20px;
+    margin-bottom: 40px;
 }
 
 .logo i {
@@ -45,31 +46,30 @@ body {
 
 .sidebar ul {
     list-style: none;
-    padding: 10px 0 20px;
 }
 
 .sidebar li {
-    padding: 14px 24px;
+    padding: 15px 30px;
     cursor: pointer;
-    transition: 0.3s;
+}
+
+.sidebar li i {
+    width: 18px;
+    text-align: center;
 }
 
 .sidebar li a {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: inherit;
     text-decoration: none;
 }
 
 .sidebar li:hover,
 .sidebar .active {
     background: #82e5dc;
-}
-
-.sidebar li:hover a,
-.sidebar .active a {
-    color: #1f2336;
+    color: #101b2d;
 }
 
 .sidebar li i {

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="TResult.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h2>Online Exam Portal</h2>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="Teacher.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="CreateExam.html">
+                <i class="fa-solid fa-file-circle-plus"></i>
+                <span>Create Exam</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>Results</span>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <li>
+                <a href="#">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Help & Support</span>
+                </a>
+            </li>
+
+    </ul>
+
+    <button class="logout-btn" onclick="window.location.href='index.html'">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Logout
+    </button>
+
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <div class="navbar">
+
+        <div>
+            <h1>Results</h1>
+            <p>Dashboard / Results</p>
+        </div>
+
+        <div class="teacher">
+            <i class="fa-solid fa-user"></i>
+            Teacher
+        </div>
+
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-box">
+
+        <select>
+            <option>Java Programming Test</option>
+            <option>DBMS Test</option>
+            <option>DSA Test</option>
+        </select>
+
+        <select>
+            <option>All Batches</option>
+            <option>CSE A</option>
+            <option>CSE B</option>
+        </select>
+
+        <button>
+            <i class="fa-solid fa-filter"></i>
+            Filter
+        </button>
+
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h2>30</h2>
+            <p>Total Students</p>
+        </div>
+
+        <div class="card">
+            <h2>26</h2>
+            <p>Students Appeared</p>
+        </div>
+
+        <div class="card">
+            <h2>72.46</h2>
+            <p>Average Marks</p>
+        </div>
+
+        <div class="card">
+            <h2>98</h2>
+            <p>Highest Marks</p>
+        </div>
+
+        <div class="card">
+            <h2>28</h2>
+            <p>Lowest Marks</p>
+        </div>
+
+    </div>
+
+    <!-- Result Table -->
+    <div class="table-box">
+
+        <div class="table-header">
+
+            <h2>Results Summary</h2>
+
+            <button>
+                <i class="fa-solid fa-download"></i>
+                Download Report
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Student Name</th>
+                    <th>Roll No.</th>
+                    <th>Marks</th>
+                    <th>Total</th>
+                    <th>Percentage</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+
+            <tbody id="resultTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<script src="TResult.js"></script>
+
+</body>
+</html>

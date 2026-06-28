@@ -18,9 +18,12 @@ body{
 
 .sidebar{
     width:260px;
-    background:#1f2336;
+    background:#101b2d;
     color:white;
     padding:25px 0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 
 .logo{
@@ -53,20 +56,40 @@ body{
     margin-right:10px;
 }
 
+.sidebar li a {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:inherit;
+}
+
 .sidebar li:hover,
 .sidebar .active{
     background:#82e5dc;
-    color:#1f2336;
+    color:#101b2d;
+    text-decoration:none;
 }
 
-/* Main */
+.logout-btn {
+    margin: auto 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #101b2d;
+    cursor: pointer;
+}
 
 .main{
     flex:1;
     padding:35px;
 }
 
-/* Navbar */
 
 .navbar{
     display:flex;

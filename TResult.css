@@ -1,0 +1,177 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+.container{
+display:flex;
+min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    background:#101b2d;
+    color:white;
+    padding:25px 0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.logo i{
+color:#82e5dc;
+font-size:32px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:15px 30px;
+    cursor:pointer;
+}
+
+.sidebar li i{
+    margin-right:12px;
+}
+
+.sidebar li a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:inherit;
+}
+
+.sidebar li:hover,
+.sidebar .active{
+    background:#82e5dc;
+    color:#101b2d;
+}
+
+.logout-btn {
+    margin: auto 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #101b2d;
+    cursor: pointer;
+}
+
+.main{
+flex:1;
+padding:35px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.teacher{
+background:white;
+padding:12px 20px;
+border-radius:10px;
+}
+
+.filter-box{
+background:white;
+padding:25px;
+border-radius:15px;
+display:flex;
+gap:20px;
+margin-top:30px;
+}
+
+.filter-box select,
+.filter-box button{
+padding:12px 20px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.card h2{
+color:#101b2d;
+margin-bottom:10px;
+}
+
+.table-box{
+background:white;
+margin-top:30px;
+border-radius:15px;
+padding:30px;
+}
+
+.table-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+}
+
+.table-header button{
+background:#82e5dc;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#e7fffb;
+}
+
+th,
+td{
+padding:15px;
+border-bottom:1px solid #ddd;
+text-align:center;
+}
+
+.pass{
+color:green;
+font-weight:bold;
+}
+
+.fail{
+color:red;
+font-weight:bold;
+}
