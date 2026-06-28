@@ -246,24 +246,23 @@ body {
 
 /* ================= TABLES ================= */
 
-.summary,
-.section-summary {
+.summary
+ {
   background: white;
   padding: 25px;
   margin-top: 25px;
   border-radius: 16px;
 }
 
-.summary table,
-.section-summary table {
+.summary table
+{
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.summary td,
-.section-summary th,
-.section-summary td {
+.summary td
+ {
   padding: 16px;
   border-bottom: 1px solid #eee;
   text-align: left;
