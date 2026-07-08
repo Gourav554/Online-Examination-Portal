@@ -221,11 +221,39 @@ function attachNavigation() {
     }
 }
 
+function showThankYouMessage() {
+    const existingMessage = document.getElementById("submission-message");
+    if (existingMessage) {
+        existingMessage.style.display = "block";
+        return;
+    }
+
+    const message = document.createElement("div");
+    message.id = "submission-message";
+    message.className = "submission-message";
+    message.textContent = "Thank you for this test";
+
+    const mainContent = document.querySelector(".main");
+    if (mainContent) {
+        mainContent.insertBefore(message, mainContent.firstChild);
+    } else {
+        document.body.appendChild(message);
+    }
+}
+
+function attachSubmitButton() {
+    const submitButton = document.querySelector(".submit-btn");
+    if (submitButton) {
+        submitButton.addEventListener("click", showThankYouMessage);
+    }
+}
+
 function initializeExamPage() {
     const timerUpdater = updateTimer();
     timerUpdater();
     setInterval(timerUpdater, 1000);
     attachNavigation();
+    attachSubmitButton();
     renderQuestions();
 }
 
