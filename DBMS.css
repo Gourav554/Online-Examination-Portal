@@ -13,9 +13,6 @@ body{
     display:flex;
     min-height:100vh;
 }
-
-
-
 .sidebar{
     width:260px;
     background:#1f2336;
@@ -80,7 +77,6 @@ body{
     border-radius:8px;
 }
 
-/* Sidebar */
 
 .sidebar {
     width: 260px;
