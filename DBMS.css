@@ -77,7 +77,6 @@ body{
     border-radius:8px;
 }
 
-
 .sidebar {
     width: 260px;
     background: #1f2336;
@@ -86,7 +85,6 @@ body{
     flex-direction: column;
     padding: 20px 0 25px;
 }
-
 .logo {
     display: flex;
     align-items: center;
