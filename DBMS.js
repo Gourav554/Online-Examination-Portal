@@ -23,7 +23,7 @@ const questions = [
     },
     {
         id: 3,
-        text: "What is the size of an int variable in Java?",
+        text: "a?",
         marks: 1,
         options: [
             "8 bits",
