@@ -1,7 +1,7 @@
 const questions = [
     {
         id: 1,
-        text: "Which of the following is not a Java feature?",
+        text: "?",
         marks: 1,
         options: [
             "Platform Independent",
@@ -12,7 +12,7 @@ const questions = [
     },
     {
         id: 2,
-        text: "Which keyword is used to inherit a class in Java?",
+        text: "?",
         marks: 1,
         options: [
             "implements",
