@@ -34,7 +34,7 @@ const questions = [
     },
     {
         id: 4,
-        text: "Which operator is used by Java for multiplication?",
+        text: "?",
         marks: 1,
         options: [
             "+",
