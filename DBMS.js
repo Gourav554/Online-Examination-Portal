@@ -4,10 +4,7 @@ const questions = [
         text: "?",
         marks: 1,
         options: [
-            "Platform Independent",
-            "Use of Pointers",
-            "Object Oriented",
-            "Robust"
+            
         ]
     },
     {
@@ -15,10 +12,7 @@ const questions = [
         text: "?",
         marks: 1,
         options: [
-            "implements",
-            "extends",
-            "inherits",
-            "super"
+            
         ]
     },
     {
