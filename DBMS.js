@@ -45,7 +45,7 @@ const questions = [
     },
     {
         id: 5,
-        text: "Which method is the entry point of a Java application?",
+        text: "?",
         marks: 1,
         options: [
             "start()",
