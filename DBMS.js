@@ -56,7 +56,7 @@ const questions = [
     },
     {
         id: 6,
-        text: "Which keyword is used to declare a constant in Java?",
+        text: "W?",
         marks: 1,
         options: [
             "static",
