@@ -67,7 +67,7 @@ const questions = [
     },
     {
         id: 7,
-        text: "Which of these is a Java access modifier?",
+        text: "",
         marks: 1,
         options: [
             "private",
