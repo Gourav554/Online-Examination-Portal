@@ -20,10 +20,7 @@ const questions = [
         text: "a?",
         marks: 1,
         options: [
-            "8 bits",
-            "16 bits",
-            "32 bits",
-            "64 bits"
+           
         ]
     },
     {
@@ -31,10 +28,7 @@ const questions = [
         text: "?",
         marks: 1,
         options: [
-            "+",
-            "-",
-            "*",
-            "/"
+          
         ]
     },
     {
