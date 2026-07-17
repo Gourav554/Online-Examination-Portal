@@ -78,7 +78,7 @@ const questions = [
     },
     {
         id: 8,
-        text: "Which collection stores key-value pairs in Java?",
+        text: "W",
         marks: 1,
         options: [
             "ArrayList",
