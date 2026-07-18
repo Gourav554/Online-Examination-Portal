@@ -74,7 +74,7 @@ const questions = [
     },
     {
         id: 9,
-        text: "What does JVM stand for?",
+        text: "",
         marks: 1,
         options: [
             ""
