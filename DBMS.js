@@ -88,7 +88,7 @@ const questions = [
     },
     {
         id: 10,
-        text: "Which keyword is used to create an object in Java?",
+        text: "?",
         marks: 1,
         options: [
             "create",
