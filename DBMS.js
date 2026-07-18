@@ -80,10 +80,7 @@ const questions = [
         text: "What does JVM stand for?",
         marks: 1,
         options: [
-            "Java Variable Machine",
-            "Java Virtual Machine",
-            "Java Version Manager",
-            "Java Visual Model"
+            ""
         ]
     },
     {
