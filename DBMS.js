@@ -58,10 +58,7 @@ const questions = [
         text: "",
         marks: 1,
         options: [
-            "private",
-            "protected",
-            "public",
-            "All of the above"
+           
         ]
     },
     {
