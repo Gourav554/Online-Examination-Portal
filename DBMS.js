@@ -69,10 +69,7 @@ const questions = [
         text: "W",
         marks: 1,
         options: [
-            "ArrayList",
-            "HashMap",
-            "LinkedList",
-            "Stack"
+            
         ]
     },
     {
