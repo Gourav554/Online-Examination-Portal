@@ -15,7 +15,7 @@ function login() {
     let message =
         document.getElementById("message");
 
-    // Student Login id and password
+    // Student Login
     if (
         role === "student" &&
         id === "24571" &&

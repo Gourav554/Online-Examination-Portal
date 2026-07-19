@@ -4,6 +4,7 @@
     box-sizing:border-box;
     font-family:Arial, sans-serif;
 }
+
 body{
     background:#f5f7fb;
 }
@@ -13,7 +14,7 @@ body{
     min-height:100vh;
 }
 
-
+/* Sidebar */
 
 .sidebar{
     width:260px;

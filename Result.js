@@ -1,4 +1,4 @@
-//Notification 
+// Notification Counter Example
 
 let notification = document.querySelector(".notification span");
 
@@ -6,7 +6,7 @@ notification.addEventListener("click", () => {
   notification.style.display = "none";
 });
 
-//Dynamic Data
+// Example Dynamic Data
 
 const percentage = 80;
 

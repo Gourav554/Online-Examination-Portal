@@ -189,7 +189,7 @@ body {
   font-weight: bold;
 }
 
-
+/* ================= PERFORMANCE ================= */
 
 .performance {
   background: white;
@@ -244,7 +244,7 @@ body {
   color: #2563eb;
 }
 
-
+/* ================= TABLES ================= */
 
 .summary
  {
@@ -333,6 +333,7 @@ body {
   font-weight: 600;
 }
 
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1200px) {
 

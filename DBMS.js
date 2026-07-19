@@ -1,92 +1,123 @@
 const questions = [
     {
         id: 1,
-        text: "?",
+        text: "Which of the following is not a Java feature?",
         marks: 1,
         options: [
-            
-        ]
+            "Platform Independent",
+            "Use of Pointers",
+            "Object Oriented",
+            "Robust"
+        ],
+        correctAnswer: "Use of Pointers"
     },
     {
         id: 2,
-        text: "?",
+        text: "Which keyword is used to inherit a class in Java?",
         marks: 1,
         options: [
-            
-        ]
+            "implements",
+            "extends",
+            "inherits",
+            "super"
+        ],
+        correctAnswer: "implements"
     },
     {
         id: 3,
-        text: "a?",
+        text: "What is the size of an int variable in Java?",
         marks: 1,
         options: [
-           
-        ]
+            "8 bits",
+            "16 bits",
+            "32 bits",
+            "64 bits"
+        ],
+        correctAnswer: "8 bits"
     },
     {
         id: 4,
-        text: "?",
+        text: "Which operator is used by Java for multiplication?",
         marks: 1,
         options: [
-          
-        ]
+            "+",
+            "-",
+            "*",
+            "/"
+        ],
+        correctAnswer: "+"
     },
     {
         id: 5,
-        text: "?",
+        text: "Which method is the entry point of a Java application?",
         marks: 1,
         options: [
             "start()",
             "main()",
             "run()",
             "init()"
-        ]
+        ],
+        correctAnswer: "start()"
     },
     {
         id: 6,
-        text: "W?",
+        text: "Which keyword is used to declare a constant in Java?",
         marks: 1,
         options: [
             "static",
             "final",
             "const",
             "immutable"
-        ]
+        ],
+        correctAnswer: "static"
     },
     {
         id: 7,
-        text: "",
+        text: "Which of these is a Java access modifier?",
         marks: 1,
         options: [
-           
-        ]
+            "private",
+            "protected",
+            "public",
+            "All of the above"
+        ],
+        correctAnswer: "private"
     },
     {
         id: 8,
-        text: "W",
+        text: "Which collection stores key-value pairs in Java?",
         marks: 1,
         options: [
-            
-        ]
+            "ArrayList",
+            "HashMap",
+            "LinkedList",
+            "Stack"
+        ],
+        correctAnswer: "ArrayList"
     },
     {
         id: 9,
-        text: "",
+        text: "What does JVM stand for?",
         marks: 1,
         options: [
-            ""
-        ]
+            "Java Variable Machine",
+            "Java Virtual Machine",
+            "Java Version Manager",
+            "Java Visual Model"
+        ],
+        correctAnswer: "Java Visual Model"
     },
     {
         id: 10,
-        text: "?",
+        text: "Which keyword is used to create an object in Java?",
         marks: 1,
         options: [
             "create",
             "new",
             "build",
             "make"
-        ]
+        ],
+        correctAnswer: "create"
     }
 ];
 
@@ -200,40 +231,14 @@ function attachNavigation() {
     }
 }
 
-function showThankYouMessage() {
-    const existingMessage = document.getElementById("submission-message");
-    if (existingMessage) {
-        existingMessage.style.display = "block";
-        return;
-    }
-
-    const message = document.createElement("div");
-    message.id = "submission-message";
-    message.className = "submission-message";
-    message.textContent = "Thank you for this test";
-
-    const mainContent = document.querySelector(".main");
-    if (mainContent) {
-        mainContent.insertBefore(message, mainContent.firstChild);
-    } else {
-        document.body.appendChild(message);
-    }
-}
-
-function attachSubmitButton() {
-    const submitButton = document.querySelector(".submit-btn");
-    if (submitButton) {
-        submitButton.addEventListener("click", showThankYouMessage);
-    }
-}
-
 function initializeExamPage() {
     const timerUpdater = updateTimer();
     timerUpdater();
     setInterval(timerUpdater, 1000);
     attachNavigation();
-    attachSubmitButton();
     renderQuestions();
 }
 
 window.addEventListener("DOMContentLoaded", initializeExamPage);
+
+
