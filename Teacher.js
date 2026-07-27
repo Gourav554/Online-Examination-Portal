@@ -16,6 +16,7 @@ function closeModal() {
     examForm.reset();
 }
 
+
 function renderExamCard(exam) {
     const card = document.createElement("div");
     card.className = "exam-card";
