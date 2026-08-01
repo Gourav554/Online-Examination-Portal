@@ -8,6 +8,7 @@ async function upsertAnswer({ submissionId, questionId, answerText }) {
      ON DUPLICATE KEY UPDATE answer_text = VALUES(answer_text)`,
     [submissionId, questionId, answerText]
   );
+  
 }
 
 // Called during grading; also covers questions the student never answered.
