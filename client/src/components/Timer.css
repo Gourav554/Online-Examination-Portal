@@ -1,0 +1,22 @@
+.exam-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-gray-100);
+  color: var(--color-heading);
+  white-space: nowrap;
+}
+
+.exam-timer::before {
+  content: "⏱";
+  font-size: 14px;
+}
+
+.exam-timer-low {
+  background-color: var(--color-danger-bg);
+  color: var(--color-danger);
+}

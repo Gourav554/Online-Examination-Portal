@@ -1,0 +1,35 @@
+.role-select {
+  display: flex;
+  background-color: var(--color-gray-50);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.role-option {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--color-gray-600);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
+}
+
+.role-option:hover {
+  color: var(--color-heading);
+}
+
+.role-option-active {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.role-option-active:hover {
+  color: var(--color-primary-dark);
+}

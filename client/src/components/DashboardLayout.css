@@ -1,0 +1,22 @@
+.dashboard-layout {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--color-bg);
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 28px 32px;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .dashboard-content {
+    padding: 18px 16px;
+    width: 100%;
+  }
+}
