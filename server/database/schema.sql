@@ -125,3 +125,11 @@ CREATE TABLE IF NOT EXISTS certificates (
   FOREIGN KEY (student_id) REFERENCES users(id) ON DELETE CASCADE,
   FOREIGN KEY (exam_id) REFERENCES exams(id) ON DELETE CASCADE
 );
+
+
+
+
+
+
+
+
