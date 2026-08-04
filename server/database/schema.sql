@@ -96,6 +96,7 @@ CREATE TABLE IF NOT EXISTS answers (
   FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
 );
 
+
 -- Phase 4: Result module
 
 CREATE TABLE IF NOT EXISTS results (
