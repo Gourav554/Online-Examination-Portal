@@ -31,6 +31,9 @@ CREATE TABLE IF NOT EXISTS teachers (
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
+
+
+
 -- Phase 2: Teacher module
 
 CREATE TABLE IF NOT EXISTS exams (
