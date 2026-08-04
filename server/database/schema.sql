@@ -62,6 +62,8 @@ CREATE TABLE IF NOT EXISTS questions (
   FOREIGN KEY (exam_id) REFERENCES exams(id) ON DELETE CASCADE
 );
 
+
+
 -- Phase 3: Student module
 
 CREATE TABLE IF NOT EXISTS submissions (
@@ -125,11 +127,4 @@ CREATE TABLE IF NOT EXISTS certificates (
   FOREIGN KEY (student_id) REFERENCES users(id) ON DELETE CASCADE,
   FOREIGN KEY (exam_id) REFERENCES exams(id) ON DELETE CASCADE
 );
-
-
-
-
-
-
-
 
