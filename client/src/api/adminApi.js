@@ -14,3 +14,7 @@ export const deleteAdminExam = (id) => api.delete(`/admin/exams/${id}`);
 export const unpublishAdminExam = (id) => api.patch(`/admin/exams/${id}/unpublish`);
 
 export const getAdminCertificates = () => api.get("/admin/certificates");
+
+
+
+
