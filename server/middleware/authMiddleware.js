@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 const { error } = require("../utils/apiResponse");
 const { findUserById } = require("../models/userModel");
 
-
+// Verifies the JWT cookie and attaches the logged-in user to req.user.
 async function protect(req, res, next) {
   const token = req.cookies.token;
 
