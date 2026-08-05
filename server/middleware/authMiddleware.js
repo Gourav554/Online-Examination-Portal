@@ -25,7 +25,6 @@ async function protect(req, res, next) {
   }
 }
 
-// Restricts a route to specific roles. Use after `protect`.
 function authorize(...roles) {
   return (req, res, next) => {
     if (!roles.includes(req.user.role)) {
