@@ -3,8 +3,7 @@ import api from "../api/axios";
 
 const AuthContext = createContext(null);
 
-// Provides the logged-in user (or null) to the whole app,
-// backed by the httpOnly JWT cookie set by the server.
+
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
